@@ -1,15 +1,15 @@
-
+<head>
 <style>
 body {
   background-color: #EAEAEE;
   color: black;
   font-family: Arial, Helvetica, sans-serif;
-  max-width: 1000px;
-  margin: auto;
-  margin-top:10px;
   margin-bottom:50px;
   font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
+  width: 1000px;
+  margin: auto;
 }
+
 
 a {
   text-decoration: none;
@@ -34,6 +34,7 @@ p{
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  margin-top: 10px;
 }
 
 .banner:hover{
@@ -67,6 +68,8 @@ p{
 .dropdown {
   position: relative;
   display: inline-block;
+  padding-left:10px;
+
 }
 
 .dropdown-content {
@@ -236,9 +239,71 @@ padding: 6px;
 width:1000px;
 }
 
+#navmenu {
+  background-color: #DDD;
+  position: fixed; /* Make it stick/fixed */
+  top: -80px; /* Hide the navbar 50 px outside of the top view */
+  width: 100%; /* Full width */
+  transition: top 0.4s; /* Transition effect when sliding down (and up) */
+  z-index:999
+  left:0;
+  right:0;
+  padding-bottom: 5px;
+  padding-left: 10px;
+}
+
 </style>
 
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    document.getElementById("navmenu").style.top = "0px";
+  } else {
+    document.getElementById("navmenu").style.top = "-80px";
+  }
+}
+
+window.addEventListener("hashchange", function () {
+    window.scrollTo(window.scrollX, window.scrollY - 100);
+});
+</script>
+
+</head>
+
 <body>
+
+<div id="navmenu">
+<div class="dropdown">
+  <button class="dropbtn"><a href="#introduction">Introduction</a></button>
+  <div class="dropdown-content">
+    <a href="#whatis">What is a Digital Twin</a>
+    <a href="#industryfour">Industry 4.0 and digital twins</a>
+    <a href="#characteristics">Enabling characteristics for digital twin technology</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn">Impact on Industry-level dynamics</button>
+  <div class="dropdown-content">
+    <a href="#">Industries that may be affected by digital twin technology</a>
+    <a href="#">Disruptive- vs sustaining effects of digital twin technology</a>
+    <a href="#">Enabling factors for digital twin technology</a>
+  </div>
+</div>
+<div class="dropdown">
+  <button class="dropbtn">Impact on firm-level dynamics</button>
+  <div class="dropdown-content">
+    <a href="#">Overall market impact of digital twin technology</a>
+    <a href="#">Incumbent firms response</a>
+    <a href="#">New entrants conceptualisation</a>
+  </div>
+</div>
+</div>
+
+
+
 
 <div class="banner">
   <div class="banner-text">
@@ -248,13 +313,14 @@ width:1000px;
 </div>
 
 <div class="dropdown">
-  <button class="dropbtn">Introduction</button>
+  <button class="dropbtn"><a href="#introduction">Introduction</a></button>
   <div class="dropdown-content">
-    <a href="#">What is a Digital Twin</a>
-    <a href="#">Industry 4.0 and digital twins</a>
-    <a href="#">Enabling characteristics for digital twin technology</a>
+    <a href="#whatis">What is a Digital Twin</a>
+    <a href="#industryfour">Industry 4.0 and digital twins</a>
+    <a href="#characteristics">Enabling characteristics for digital twin technology</a>
   </div>
 </div>
+
 <div class="dropdown">
   <button class="dropbtn">Impact on Industry-level dynamics</button>
   <div class="dropdown-content">
@@ -272,24 +338,25 @@ width:1000px;
   </div>
 </div>
 
-<div class="titleheader glow">
+
+<div class="titleheader glow" id="introduction">
 <h1>Introduction</h1>
 </div>
 
-<div class="textbreed">
+<div class="textbreed" id="whatis">
 <h2> What is a digital twin?</h2>
 <p>In some industries like engineering the use of models to replicate reality might be as old as the respective industry itself. Already in the 1970s NASA used to make ’twins’ of their spacecrafts to analyze its design (source). Due to the emergence and ‘explosion’ of big data, artificial intelligence and computational power a new phenomenon has come to existence: digital twins. A general definition used by most people was given by Glaessegen and Stargel in 2012: a digital twin is an integrated multi-physics, multi-scale, probabilistic simulation of a complex product and uses the best available physical models, sensor updates, etc., to mirror the life of its corresponding twin (Tao et al., 2017; Glaessgen, Stargel, 2012). Digital twins generally consist of three components: a physical product, a virtual (twin) product and connected data that tie the two products. Digital twins can be visualized through a virtual-, augmented- or a mixed reality (Ke, Xiang, Zhang and Zuo, 2019). However a live data feed from a physical component’s space, which has no visualization other than virtual information might just as well be defined as a digital twin (Schleich, Anwer, Mathieu, Wartzack, 2017). An efficient and well-working digital twin has three important characteristics (Tao et al., 2017): (1) Real-time reflection. The virtual space contains the real reflection of the physical space while keeping high synchronization. (2) Interaction and convergence. There is a constant interaction between data in various phases- and from various sensors of the physical space (and the virtual space). This makes that the data can be mined deeply and used more fully through convergence. (3) Self-evolution. A digital twin can update data in real-time so that virtual models may continuously improve through comparing virtual- and physical space.</p>
 </div>
 
-<div class="textbreed">
+<div class="textbreed" id="industryfour">
 <h2> Industry 4.0 and digital twins</h2>
 <p>The digitization of today’s society and everyday processes implies for a new industrial revolution to be emerging. The term ‘industry 4.0’ refers to a 4th industrial revolution and was picked up by a recommendation to the German Government and has become an eponym for a future project concerning the high-tech strategy 2020 (Lasi, Kemper, Fettke, Feld, Hoffman, 2014). This change is being driven by an application-pull and a technology-push as driving forces. Examples of some of the technological components that make up for this revolution are: 3D printing, IoT and data visualization and -analytics. Another important component will be digital twins though. Digital twins can drive an increasing efficiency in product design, industrial engineering but also in training simulations for military or aeronautics purposes for instance (Uhlemann, Lehmann, Steinhilper, 2017). The application possibilities for this technology seem to cover a range of different industries which makes it an interesting subject for further research.
 </p>
 <img src="ncdt.png">
 </div>
 
-<div class="titleheader glow">
-<h1>Technological Attributes</h1>
+<div class="titleheader glow" id="characteristics">
+<h1>Enabling characteristics of Digital Twin technology</h1>
 </div>
 
 <div class="row">
@@ -414,7 +481,7 @@ Furthermore, DT technology advanced enough can also maximise IoT deployment, eff
 <h2>Industries that may be affected by digital twin technology</h2>
 </div>
 
-<div class="imgban">
+<div class="imgban glow">
 <img src="medban.png">
 </div>
 
@@ -433,6 +500,57 @@ If you look further into the future, the digital twin technology can also be see
 
 </p>
 </div>
+
+<div class="imgban glow">
+<img src="farban.png">
+</div>
+
+<div class="textbreed">
+<h2> Digital Twins application in farming</h2>
+<p>
+With the increase in world population, there’s an increasing shortage of food (source). Agriculture has to become more effective, and one of the technologies named to help farming become more effective is digital twins (Verdouw et al, 2017). A digital twin will help farmers deal with unexpected events. By using a virtual version of their farm they can predict potential issues, predict necessary maintenance and use the right composite for optimal crop growth (Verdouw et al, 2017)
+<br><br>
+Furthermore, with the use of sensors, antennas, and scanning machinery, Stara (see example below - link to incumbents please Niels) is able to create a digital map of the designated area, and a virtual twin with all its soil mineral and fertility information, as well as height differences and wide array of data. This allows for precision agriculture to take place, where predictive and prescriptive decision-making can be automated, allowing for optimisation of crop retrieval and soil reparation efficiency.A
+<br><br>
+In this day and age,being successful in your niche, whatever it may be, is extremely difficult due to competition, but even more so if entrepreneurs choose to ignore the potential of technology. Digital twin also has the ability to empower its users in the agricultural industry (more specifically farmers), as it can arm them with analytical tools and systems to accurately and efficiently plant crops, prepare for potential floods/droughts and other simulations, accurately predict and prescribe specific locations for specific seeds, needing different ground conditions or sunlight exposure (these are only a few examples). These techy farmers may gain a vast advantage over its traditional counterparts.
+<br><br>
+In Beekeeping for example, Digital Twin technology allows systems to produce a real-time virtual representation of the apiary system, which through multiple sensors (weight, humidity, light, sound…) allows beekeepers to identify possible diseases/pest infections, real-time knowledge of colony status, among many others. This, in turn, enhances productivity and efficiency of ecosystems monitoring and maintenance. https://www.beezon.gr/en/about-us/ 
+
+</p>
+</div>
+
+<div class="titleheader glow">
+<h2>Disruptive- vs sustaining effects of digital twin technology</h2>
+</div>
+
+<div class="titleheader glow">
+<h1>Impact on firm-level dynamics</h1>
+</div>
+
+<div class="textbreed">
+<h2> Overall market impact of digital twin technology</h2>
+<p>
+
+</p>
+</div>
+
+<div class="titleheader glow">
+<h2>Incumbent firms responses</h2>
+</div>
+
+<div class="titleheader glow">
+<h2>New entrants conceptualisation</h2>
+</div>
+
+<div class="titleheader glow">
+<h1>References</h1>
+</div>
+
+
+
+
+
+
 
 <script>
 
