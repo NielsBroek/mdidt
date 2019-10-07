@@ -8,6 +8,7 @@ body {
   margin: auto;
   margin-top:10px;
   margin-bottom:50px;
+  font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
 }
 
 a {
@@ -19,9 +20,13 @@ h1 {
     color: white;   
 }
 
+p{
+	font-size:14px;
+}
+
 .banner {
 
-  background-image: linear-gradient(rgba(0, 0, 30, 0.3), rgba(0, 0, 30, 0.3)), url("https://media.giphy.com/media/3mI1FBiKpnjDG/giphy.gif");
+  background-image: linear-gradient(rgba(0, 0, 30, 0.4), rgba(0, 0, 30, 0.4)), url("https://media.giphy.com/media/3mI1FBiKpnjDG/giphy.gif");
 
   height: 30%;
 
@@ -33,7 +38,7 @@ h1 {
 
 .banner:hover{
 
-  background-image: linear-gradient(rgba(0, 0, 30, 0.22), rgba(0, 0, 30, 0.22)), url("https://media.giphy.com/media/3mI1FBiKpnjDG/giphy.gif");
+  background-image: linear-gradient(rgba(0, 0, 30, 0.3), rgba(0, 0, 30, 0.3)), url("https://media.giphy.com/media/3mI1FBiKpnjDG/giphy.gif");
 }
 
 .banner-text {
@@ -99,11 +104,11 @@ box-shadow: 0 10px 25px rgba(255, 255, 255, .6);
 }
 
 .column{
-  flex: 50%;
+  flex: 40%;
 }
 
 .columntext{
-  flex: 50%;
+  flex: 60%;
   padding-top: 8px;
   padding-bottom: 8px;
   font-size: 13px;
@@ -115,7 +120,7 @@ box-shadow: 0 10px 25px rgba(255, 255, 255, .6);
 
 }
 
-.columntext h2, .hidblock h2{
+.columntext h2, .hidblock h2, .textbreed h2{
 	margin: 0px;
 	padding-top: 10px;
     padding-bottom: 5px;
@@ -123,7 +128,7 @@ box-shadow: 0 10px 25px rgba(255, 255, 255, .6);
     padding-right: 15px;
 }
 
-.columntext p, .hidblock p{
+.columntext p, .hidblock p, .textbreed p{
 	margin: 0px;
 	padding-top: 2px;
     padding-bottom: 5px;
@@ -183,6 +188,54 @@ margin-bottom:-8px;
 padding: 8px;
 }
 
+.titleheader h2{
+margin:0px;
+margin-top:12px;
+margin-bottom:-7px;
+padding: 6px;
+}
+
+.textbreed {
+  margin-top:15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 13px;
+  background-color: #F6F6F6
+
+}
+
+.textbreed img{
+	display:block;
+	max-width:500px;
+	margin-left: auto;
+    margin-right: auto;
+	object-align:center;
+}
+
+#cont1{
+	display:block;
+
+}
+
+.imgwrap{
+	float:left;
+	width:300px;
+	margin-left:15px;
+	margin-right:12px;
+}
+
+.imgwrap img{
+	max-width:300px;
+}
+
+.imgban{
+	margin-top:15px;
+}
+
+.imgban img{
+width:1000px;
+}
+
 </style>
 
 <body>
@@ -190,7 +243,7 @@ padding: 8px;
 <div class="banner">
   <div class="banner-text">
     <h1>Digital Twin Technology</h1>
-    <p>subtext</p>
+    <p>Virtual replicas of real world objects</p>
   </div>
 </div>
 
@@ -220,6 +273,22 @@ padding: 8px;
 </div>
 
 <div class="titleheader glow">
+<h1>Introduction</h1>
+</div>
+
+<div class="textbreed">
+<h2> What is a digital twin?</h2>
+<p>In some industries like engineering the use of models to replicate reality might be as old as the respective industry itself. Already in the 1970s NASA used to make ’twins’ of their spacecrafts to analyze its design (source). Due to the emergence and ‘explosion’ of big data, artificial intelligence and computational power a new phenomenon has come to existence: digital twins. A general definition used by most people was given by Glaessegen and Stargel in 2012: a digital twin is an integrated multi-physics, multi-scale, probabilistic simulation of a complex product and uses the best available physical models, sensor updates, etc., to mirror the life of its corresponding twin (Tao et al., 2017; Glaessgen, Stargel, 2012). Digital twins generally consist of three components: a physical product, a virtual (twin) product and connected data that tie the two products. Digital twins can be visualized through a virtual-, augmented- or a mixed reality (Ke, Xiang, Zhang and Zuo, 2019). However a live data feed from a physical component’s space, which has no visualization other than virtual information might just as well be defined as a digital twin (Schleich, Anwer, Mathieu, Wartzack, 2017). An efficient and well-working digital twin has three important characteristics (Tao et al., 2017): (1) Real-time reflection. The virtual space contains the real reflection of the physical space while keeping high synchronization. (2) Interaction and convergence. There is a constant interaction between data in various phases- and from various sensors of the physical space (and the virtual space). This makes that the data can be mined deeply and used more fully through convergence. (3) Self-evolution. A digital twin can update data in real-time so that virtual models may continuously improve through comparing virtual- and physical space.</p>
+</div>
+
+<div class="textbreed">
+<h2> Industry 4.0 and digital twins</h2>
+<p>The digitization of today’s society and everyday processes implies for a new industrial revolution to be emerging. The term ‘industry 4.0’ refers to a 4th industrial revolution and was picked up by a recommendation to the German Government and has become an eponym for a future project concerning the high-tech strategy 2020 (Lasi, Kemper, Fettke, Feld, Hoffman, 2014). This change is being driven by an application-pull and a technology-push as driving forces. Examples of some of the technological components that make up for this revolution are: 3D printing, IoT and data visualization and -analytics. Another important component will be digital twins though. Digital twins can drive an increasing efficiency in product design, industrial engineering but also in training simulations for military or aeronautics purposes for instance (Uhlemann, Lehmann, Steinhilper, 2017). The application possibilities for this technology seem to cover a range of different industries which makes it an interesting subject for further research.
+</p>
+<img src="ncdt.png">
+</div>
+
+<div class="titleheader glow">
 <h1>Technological Attributes</h1>
 </div>
 
@@ -243,31 +312,37 @@ padding: 8px;
 			&gt;
 			</span>
 		</div>
+		<div class="selectterm" onclick="show(4)">
+		Digital Traces
+			<span class ="rightdash">
+			&gt;
+			</span>
+		</div>
 	</div>
 	
 	<div class="termcont">
 		<div class="hidblock" id="cont1">
 		<h2>Homogenization and decoupling</h2>
 		<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae nunc ut ligula cursus fringilla. Cras nec tortor lacus. Morbi vitae nunc ullamcorper, vulputate tellus eu, tristique leo. Aliquam convallis lacinia est non lacinia. Donec non euismod nunc, vel gravida enim. Quisque quis iaculis nibh, eget rhoncus leo. Praesent volutpat molestie leo suscipit eleifend. Aliquam finibus lobortis augue, non porta arcu. Ut id nisi sit amet leo egestas aliquam. Ut a ornare turpis. Duis et egestas leo, a consectetur metus.
-
-		Vivamus et posuere risus, nec blandit eros. Maecenas commodo neque in odio vehicula vehicula. Sed ipsum augue, faucibus quis odio id, elementum ultricies sapien. Nullam consectetur nibh a laoreet mattis. Maecenas viverra vel ligula eget lacinia. Phasellus neque enim, placerat tempus blandit id, rutrum sed dolor. Sed ut finibus mi, eget porta dolor. Cras ligula orci, euismod id dui ac, tincidunt ullamcorper leo. Duis aliquet dignissim eros eget molestie. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer mattis velit elit, eu lacinia est consectetur non. Nunc blandit eget nibh et egestas. Ut sed ex nisl. Etiam dictum mi nec aliquam sodales. Nulla facilisi. Phasellus gravida nunc et sapien laoreet aliquam. Integer in dolor nibh. Nullam malesuada nisi.
+		A general trend is seen for digital technologies where they increasingly enable the homogenization of data. The homogenization of digital information makes that the same technologies can process different types of information. This highly enables the creation of digital twins as well. Because a whole range of parameters can increasingly be processed by the same technologies the creation of appropriate digital twins is enabled. Since the same technologies can now process multiple parameters these different types of parameters may increasingly be converged within the virtual representation of a digital twin. This in line with a general trend which is seen that homogenization of data leads to the convergence of experiences and -industries
 		</p>
 		</div>
 		<div class="hidblock" id="cont2">
 		<h2>Connectivity</h2>
 		<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet pretium nisl id vehicula. Morbi fringilla lectus ut sapien tincidunt sollicitudin. Mauris ornare a nisi in commodo. Praesent at molestie lorem, id interdum lacus. Integer sollicitudin, lectus eu ornare mattis, dui diam ornare odio, sit amet mattis arcu quam rhoncus mauris. Vivamus condimentum, metus ac ultricies tempor, arcu ligula dapibus mauris, vitae posuere tortor elit eget mi. Quisque imperdiet, ante viverra tempor porttitor, urna dui venenatis nisi, ac ullamcorper dui lacus ut ipsum. Cras libero mi, aliquam eget ante vitae, mollis volutpat ipsum. Suspendisse dictum, tellus eu pharetra gravida, diam turpis sodales lectus, a ultricies quam eros et diam. In iaculis, enim nec interdum tincidunt, velit ipsum pulvinar tellus, non efficitur dui leo lacinia mauris. Fusce laoreet venenatis posuere. Nulla lobortis nunc id tellus ornare, vitae vehicula quam varius. In hac habitasse platea dictumst. Nullam scelerisque ex id est sagittis fringilla. Fusce nec nibh vel diam sodales viverra ut eget lacus.
-
-		Maecenas varius ullamcorper urna, ac interdum leo fermentum ut. Suspendisse potenti. Vestibulum libero mi, mattis sed facilisis sit amet, efficitur vel felis. Curabitur interdum volutpat orci at mollis. Pellentesque eu augue turpis. Nunc sit amet sem vitae magna rutrum.
+		Since a big part of the data enabling a digital twin usually is being captured through IoT driven sensors (source) the connectivity of these sensors is of high importance. The way different sensors and pieces of equipment are connected is essential for an efficient creation of appropriate digital twins as a relatively bad connection will have a negative effect on the transferability of data. This may also be defined as the interoperability of the digital twin system. Besides the essence of different pieces of equipment being interoperable, connectivity of the digital twin also leads to an easier connection with different users of the digital twin. It can be very beneficial if multiple people within a network/organization have access to the same digital twin from different locations. This way, connectivity may also increase the efficiency of virtual teams or may have positive network effects in case the value of the digital twin is connected to the number of its users (source -slide). Bosschert and Rosen (2018) even argue the connective nature of digital twins may lead to the connection between multiple digital twins which leads to an even more extensive interoperability between different organizations or stakeholders.
 		</p>
 		</div>
 		<div class="hidblock" id="cont3">
 		<h2>Reprogrammable and Smart</h2>
 		<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id lacus vel velit aliquam euismod quis quis dui. Nulla elementum magna eu massa sollicitudin egestas. Cras accumsan posuere ligula vitae ultricies. Cras blandit neque eu sem pulvinar aliquam. Sed fermentum, metus vitae faucibus dignissim, lectus lectus lobortis erat, quis semper velit turpis non nulla. Aliquam ac iaculis tortor. Pellentesque bibendum at diam id iaculis. Praesent nibh nulla, dignissim sit amet condimentum vel, finibus a erat. Nullam varius volutpat aliquet. Morbi ante nisl, laoreet vel sodales at, mollis quis justo. Donec tincidunt ante eu elit semper posuere. Duis eget ipsum dapibus, iaculis nisi ac, lobortis mi.
-
-		In erat felis, commodo vel velit at, dignissim molestie massa. Cras ut ex a lectus aliquet mollis. Etiam venenatis eros in purus commodo, a euismod urna luctus. Sed bibendum mauris quam, sed tristique augue maximus sit amet. Vestibulum pharetra erat nec congue commodo. Aenean interdum libero sed dui dictum ornare. Praesent accumsan eros a nisl malesuada, sit amet convallis lorem lobortis. Aliquam feugiat accumsan metus eget convallis. Aenean sollicitudin elit sed turpis eleifend molestie. Sed tempor lacus at sem commodo faucibus. Mauris eget condimentum dolor, eu gravida sapien. Praesent vel scelerisque nisl. Mauris eleifend nisi.
+		Because the reprogrammability of digital products or hardware they are considered to be ‘smart’ and this enables a lowered barrier to update products and product versioning in general. The reprogrammability of hardware enables innovation on a higher rate without being forced to acquire the newest hardware for every update. For digital twin technology this implies accelerated innovation for all the equipment involved in creating a digital twin. This includes the equipment processing all the data as well as all IoT driven sensors providing the data making up the digital twin. The reprogrammable nature of the hardware involved with digital twin technology catalyzes improvements (i.e. innovations) and thus development in the field of digital twin technology. 
+		</p>
+		</div>
+		<div class="hidblock" id="cont4">
+		<h2>Digital Traces</h2>
+		<p>
+		As mentioned in the introduction, the ‘explosion’ of big data has been a huge enabler for the digital twin technology. While the alternative was to manually enter parameter data of the physical space which had to be described in the virtual space as a digital twin, digital traces enable these parameters to be fed live via Internet of Things (IoT) sensors. The increasing amount of digital traces that can be captured from the physical space make that the representation in the virtual space can be drastically improved. When more and more physical phenomena may be captured through digital traces this will have a very positive and enabling effect on the development of digital twin technology. 
 		</p>
 		</div>
 	</div>
@@ -275,33 +350,89 @@ padding: 8px;
 </div>
 
 <div class="titleheader glow">
-<h1>Technological Applications</h1>
+<h1>Impact on industry-level dynamics</h1>
+</div>
+
+<div class="textbreed">
+<h2>General Impact</h2>
+<p>As discussed earlier, the application of digital twins has the potential to enable decentralization-, an increasing efficiency- and the disruption of a range of processes in different industries. It is an interesting debate to see which industries in particular may be affected by the emergence of digital twins. In order to do so the industry-level dynamics must be mapped and an understandance of the enabling factors (and barriers) with respect to digital twins must be built. 
+To better understand industry adoptance of digital twin technology a recent research conducted by Gartner provides some clarity (Costello, Omale, 2019). Because of the strong connection digital twin technology has with IoT based processes, the research focused on organizations implementing IoT projects. Thirteen percent of these organizations are already using digital twins in 2019, while another 62 percent are either in the process of establishing digital twin use or are planning to do so. This shows the adoption of digital twins on an industry-level is certainly on the rise compared to previous years. [find a figure/chart showing DT adoption] 
+The developments within- and applications of digital twins are not expected to be isolated in only one industry (source). Applications of this technology throughout a whole range of different industries and processes are believed to be emerging in the future. Following, the enabling factors concerned with the emergence of digital twin technology will be covered. Besides, some examples will be given of industries for which it is expected digital twins will play a significant role in the future. However, it is important to note the application of digital twins will not necessarily be limited to the discussed industries. 
+</p>
+</div>
+
+<div class="textbreed">
+<h2>S-curve</h2>
+<p>
+To measure the performance level of a technology some useful frameworks are provided from academic literature. One of these frameworks is ‘the technology S-curve’ (source). The name of this tool refers to the shape of the curve, which is also presented in figure X.
+</p>
+<div class="imgwrap">
+<img src="scurve.png">
+</div>
+<p>
+The S-curve represents the performance of the technology on the y-axis over time on the x-axis. Generally speaking, for every technology, there are a number of milestone moments that can be identified in a technology’s roadmap. It starts with pioneering the science behind the technology. Subsequently, there are generally some major technical obstacles which must be tackled before the technology’s application can take off, and the performance of it will be mastered. Eventually, a technology tends to approach its physical limits over time at which point a new ‘disrupting’ technology may prove to be the better alternative. 
+
+Digital twin technology specifically is around a quarter in its S-curve. The science behind has most definitely been pioneered (sources!). And the first of its major technical obstacles have been overcome (or are in the process of being overcome). Take for instance the computing power needed for the physical asset to generate data and access to servers on-premise, in the cloud or at the edge for further processing and storage. Also the connectivity to transmit these data is an essential factor for this process. These two factors would have been major obstacles to creating digital twins in the past but they are starting to become surmountable. All this points to the establishment of IoT, which has allowed DT technology to be cost-effective enough to implement. However, still not all obstacles to digital twins’ performance have been overcome. In the context of the S-curve we can conclude that anno 2019, the technology finds itself around a quarter of the curve at a very crucial point where its major obstacles can be seen to be overcome within the near future. 
+
+This following part will discuss digital twins’ enabling factors which in turn can also be an obstacle depending on their performance. 
+</p>
+</div>
+
+<div class="titleheader glow">
+<h2>Enabling factors or obstacles</h2>
 </div>
 
 <div class="row glow">
 	<div class="column">
-    <img src="https://images.idgesg.net/images/article/2018/06/digital-twins_woman-in-profile_ai_mirror_duplicate_duo_pair-100760562-large.3x2.jpg">
+    <img src="iot.png">
     </div>
     <div class="columntext">
-    <h2>Virtual Reality</h2>
-    <p>As explained above digital twins may be represented in a virtual-, augmented-, or mixed reality. This page will focus on the former which means it will focus on 
-  digital twins in a completely virtual environment. While augmented- and mixed reality 	are a mixture of the digital world and our physical world, virtual reality withholds a completely digital world. This can be visualized through virtual glasses like the Microsoft Hololens but also on a computer screen. This means digital twins represented in such a reality may also be visualized through these hardware. </p>
+    <h2>Internet of Things (IoT)</h2>
+	<p>
+	This concept came about at roughly the same time as Wireless Sensor Networks, which created a growth in interest from industrial and research organisations. The increasing availability of inexpensive low powered elements like processors, sensors and radios usually integrated within a single chip. These possess a wide array of applications from weather monitoring to target tracking. The ability an individual has to access these technological instruments through a computational device is called Internet of Things, although it can be seen as much more. Through the cross-interaction with other technologies such as DT, AR/VR, Big Data and multiple systems from several companies, cars, home appliances, electronic devices, games consoles, basically any device with sensorial information and a stable connection to the internet is connected, interacting and communicating with one another.
+DHL argues Digital Twin adoption is heavily impacted by the growing interest in IoT. The more devices are connected, the more information is being shared and with that the more accurate Digital Twins can be, and collecting large volumes of data from this wide array of devices is cheaper and easier than ever before. This raises the counter-argument which states that the more data you have from IoT and Big data platforms and products, the more complex that data, which may in turn lead to a higher adoption of subsystems and digital tools to aid managers and decision-makers.
+Furthermore, DT technology advanced enough can also maximise IoT deployment, efficiency, and encapsulation (aggregating a complex piece of details/software within one single line of code), as organisations will be able to test out multiple objects virtually before deciding to proceed with the physical model. (NetworkWorld) (Gartner’s Sarah Hippold) 
+	</p>
     </div>
 
 </div>
 
 <div class="row glow" id="twee">
 	<div class="columntext">
-    <h2>Virtual Reality</h2>
-    <p>As explained above digital twins may be represented in a virtual-, augmented-, or mixed reality. This page will focus on the former which means it will focus on 
-  digital twins in a completely virtual environment. While augmented- and mixed reality 	are a mixture of the digital world and our physical world, virtual reality withholds a completely digital world. This can be visualized through virtual glasses like the Microsoft Hololens but also on a computer screen. This means digital twins represented in such a reality may also be visualized through these hardware. </p>
+    <h2>Augmented Reality / Mixed Reality / Virtual Reality</h2>
+	<p>
+	To efficiently gain advantage, and act on the insights generated by a digital twin, it must be rendered either on a screen (2D) or in physical space (3D). To date, most digital twins have been rendered in two-dimensional space, as the conventional computing norms of today limit us to displays on monitors, laptops, and other screens. But increasingly, augmented reality is enabling us to display digital content in 3D. In addition, mixed reality allows us to interact with digital content in our existing physical environment. And virtual reality allows us to create entirely new environments to render digital twins in a highly immersive way, creating the richest consumption of and interaction with the information. While the above technologies – IoT, cloud computing, APIs, and artificial intelligence – provide the underlying sensing and processing infrastructure required to create a digital twin, augmented, mixed, and virtual reality are tools for visualizing digital twins and making them real to the user. 
+	</p>
     </div>
 	<div class="column">
-    <img src="https://images.idgesg.net/images/article/2018/06/digital-twins_woman-in-profile_ai_mirror_duplicate_duo_pair-100760562-large.3x2.jpg">
+    <img src="virtualreality.png">
     </div>
 
 </div>
 
+<div class="titleheader glow">
+<h2>Industries that may be affected by digital twin technology</h2>
+</div>
+
+<div class="imgban">
+<img src="medban.png">
+</div>
+
+<div class="textbreed">
+<h2> Digital Twins application in medicine</h2>
+<p>
+In the field of drug development, there is a hypothesis that the digital twin technology will contribute in the context of personal medicine. With the advent of techniques to measure personal parameters such as metabolism, DNA sequence and lifestyle, a high-quality personal model can be created in the form of a digital twin. This digital twin (or virtual patient) enables to investigate ‘in-silico’ what type of medication is most suitable for a patient (Ekins, Mestres, Testa, 2007). With the integration of big data, it might be possible to predict how a patient will respond to a certain treatment. This can be done by analysing a database in which treated patients are listed and how they have responded to their treatments. (Bruynseels, Sio, & Hoven, 2018) By this manner, valuable time and expensive treatments kan be saved from the real patient. Moreover, this technology can improve the experience of the patient himself, because the patient does not have to endure the search for the right treatment.
+	<br><br>
+Another application of digital twin technology in healthcare is to create a copy of each individual. This twin can then be fed by data from sensors. Or as Philips states:
+	<br><br>
+<i>“The ultimate vision is to have a lifelong, personalized model of a patient that is updated with each measurement, scan or exam, and that includes behavioral and genetic data as well.” - (van Houten, 2018)</i>
+	<br><br>
+Subsequently, real-time and remote analysis can be done in order to find out which health related problems may occur. Consider, for example, someone who has a bad heart because of his/her bad genes, and at the same time measurements show that the patient involved has high blood pressure, then the model might be able to generate an estimation of the expected lifetime of the heart valves. The heart valves can then be replaced preventively. These preventive treatments prevent patients from life-threatening situations and major inconveniences. A problem at this moment, however, is that people are highly unique and that very accurate techniques are needed to determine, for example, how someone’s heart is constructed. (van Houten, 2018)
+	<br><br>
+If you look further into the future, the digital twin technology can also be seen as a platform; for example, it allows the physician to accurately study the patient's heart through VR prior to surgery (van Houten, 2018). However, this kind of application requires proper integration of the required technologies. Besides, this form of application of digital twin technology also raises major ethical issues (Bruynseels, Sio, & Hoven, 2018). In addition, the technical integration of all different data types and data points can be a challenge. (Krikpatrick, 2019)
+
+</p>
+</div>
 
 <script>
 
