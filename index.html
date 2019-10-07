@@ -252,6 +252,10 @@ width:1000px;
   padding-left: 10px;
 }
 
+[id^="ref"]:target{
+ font-weight:bold;
+}
+
 </style>
 
 <script>
@@ -266,7 +270,7 @@ function scrollFunction() {
 }
 
 window.addEventListener("hashchange", function () {
-    window.scrollTo(window.scrollX, window.scrollY - 100);
+    window.scrollTo(window.scrollX, window.scrollY - 120);
 });
 </script>
 
@@ -345,12 +349,17 @@ window.addEventListener("hashchange", function () {
 
 <div class="textbreed" id="whatis">
 <h2> What is a digital twin?</h2>
-<p>In some industries like engineering the use of models to replicate reality might be as old as the respective industry itself. Already in the 1970s NASA used to make ’twins’ of their spacecrafts to analyze its design (source). Due to the emergence and ‘explosion’ of big data, artificial intelligence and computational power a new phenomenon has come to existence: digital twins. A general definition used by most people was given by Glaessegen and Stargel in 2012: a digital twin is an integrated multi-physics, multi-scale, probabilistic simulation of a complex product and uses the best available physical models, sensor updates, etc., to mirror the life of its corresponding twin (Tao et al., 2017; Glaessgen, Stargel, 2012). Digital twins generally consist of three components: a physical product, a virtual (twin) product and connected data that tie the two products. Digital twins can be visualized through a virtual-, augmented- or a mixed reality (Ke, Xiang, Zhang and Zuo, 2019). However a live data feed from a physical component’s space, which has no visualization other than virtual information might just as well be defined as a digital twin (Schleich, Anwer, Mathieu, Wartzack, 2017). An efficient and well-working digital twin has three important characteristics (Tao et al., 2017): (1) Real-time reflection. The virtual space contains the real reflection of the physical space while keeping high synchronization. (2) Interaction and convergence. There is a constant interaction between data in various phases- and from various sensors of the physical space (and the virtual space). This makes that the data can be mined deeply and used more fully through convergence. (3) Self-evolution. A digital twin can update data in real-time so that virtual models may continuously improve through comparing virtual- and physical space.</p>
+<p>
+In some industries like engineering the use of models to replicate reality might be as old as the respective industry itself. Already in the 1970s NASA used to make ’twins’ of their spacecrafts to analyze its design <a href="#ref1"> <sup>[1]</sup></a>. Due to the emergence and ‘explosion’ of big data, artificial intelligence and computational power a new phenomenon has come to existence: digital twins. A general definition was given by Glaessegen and Stargel in 2012 <a href="#ref2"> <sup>[2]</sup></a>: a digital twin is an integrated multi-physics, multi-scale, probabilistic simulation of a complex product and uses the best available physical models, sensor updates, etc., to mirror the life of its corresponding twin <a href="#ref2"> <sup>[2]</sup></a> <a href="#ref3"> <sup>[3]</sup></a>. Digital twins generally consist of three components: a physical product, a virtual (twin) product and connected data that tie the two products. Digital twins can be visualized through a virtual-, augmented- or a mixed reality <a href="#ref4"> <sup>[4]</sup></a>. However a live data feed from a physical component’s space, which has no visualization other than virtual information might just as well be defined as a digital twin.<a href="#ref5"> <sup>[5]</sup></a> An efficient and well-working digital twin has three important characteristics <a href="#ref3"> <sup>[3]</sup></a>: (1) Real-time reflection. The virtual space contains the real reflection of the physical space while keeping high synchronization. (2) Interaction and convergence. There is a constant interaction between data in various phases- and from various sensors of the physical space (and the virtual space). This makes that the data can be mined deeply and used more fully through convergence. (3) Self-evolution. A digital twin can update data in real-time so that virtual models may continuously improve through comparing virtual- and physical space.  
+
+</p>
 </div>
 
 <div class="textbreed" id="industryfour">
 <h2> Industry 4.0 and digital twins</h2>
-<p>The digitization of today’s society and everyday processes implies for a new industrial revolution to be emerging. The term ‘industry 4.0’ refers to a 4th industrial revolution and was picked up by a recommendation to the German Government and has become an eponym for a future project concerning the high-tech strategy 2020 (Lasi, Kemper, Fettke, Feld, Hoffman, 2014). This change is being driven by an application-pull and a technology-push as driving forces. Examples of some of the technological components that make up for this revolution are: 3D printing, IoT and data visualization and -analytics. Another important component will be digital twins though. Digital twins can drive an increasing efficiency in product design, industrial engineering but also in training simulations for military or aeronautics purposes for instance (Uhlemann, Lehmann, Steinhilper, 2017). The application possibilities for this technology seem to cover a range of different industries which makes it an interesting subject for further research.
+<p>
+The digitization of today’s society and everyday processes implies for a new industrial revolution to be emerging. The term ‘industry 4.0’ refers to a 4th industrial revolution driven by digital technologies emerging in the current and following decade. It was picked up by a recommendation to the German Government and has become an eponym for a future project concerning the high-tech strategy 2020<a href="#ref6"> <sup>[6]</sup></a>. This change is being driven by an application-pull from different industries and a technology-push as driving forces. Examples of some of the technological components that make up for this revolution’s driving forces are: 3D printing, IoT and data visualization and -analytics. Another important technological driver will be digital twins though. Digital twins can drive an increasing efficiency in product design, industrial engineering but also in training simulations for military or aeronautics purposes for instance <a href="#ref7"> <sup>[7]</sup></a>. The application possibilities for this technology seem to cover a range of different industries which makes it an interesting subject for further research and to see its potential effects and applications for different industries. 
+
 </p>
 <img src="ncdt.png">
 </div>
@@ -391,13 +400,13 @@ window.addEventListener("hashchange", function () {
 		<div class="hidblock" id="cont1">
 		<h2>Homogenization and decoupling</h2>
 		<p>
-		A general trend is seen for digital technologies where they increasingly enable the homogenization of data. The homogenization of digital information makes that the same technologies can process different types of information. This highly enables the creation of digital twins as well. Because a whole range of parameters can increasingly be processed by the same technologies the creation of appropriate digital twins is enabled. Since the same technologies can now process multiple parameters these different types of parameters may increasingly be converged within the virtual representation of a digital twin. This in line with a general trend which is seen that homogenization of data leads to the convergence of experiences and -industries
+		A general trend is seen for digital technologies where they increasingly enable the homogenization of data. The homogenization of digital information makes that the same technologies can process different types of information. This highly enables the creation of digital twins as well. Because a whole range of parameters can increasingly be processed by the same technologies the creation of appropriate digital twins is enabled. Since the same technologies can now process multiple parameters these different types of parameters may increasingly be converged within the virtual representation of a digital twin. This in line with a general trend which is seen that homogenization of data leads to the convergence of experiences and -industries <a href="#ref8"> <sup>[8]</sup></a>.
 		</p>
 		</div>
 		<div class="hidblock" id="cont2">
 		<h2>Connectivity</h2>
 		<p>
-		Since a big part of the data enabling a digital twin usually is being captured through IoT driven sensors (source) the connectivity of these sensors is of high importance. The way different sensors and pieces of equipment are connected is essential for an efficient creation of appropriate digital twins as a relatively bad connection will have a negative effect on the transferability of data. This may also be defined as the interoperability of the digital twin system. Besides the essence of different pieces of equipment being interoperable, connectivity of the digital twin also leads to an easier connection with different users of the digital twin. It can be very beneficial if multiple people within a network/organization have access to the same digital twin from different locations. This way, connectivity may also increase the efficiency of virtual teams or may have positive network effects in case the value of the digital twin is connected to the number of its users (source -slide). Bosschert and Rosen (2018) even argue the connective nature of digital twins may lead to the connection between multiple digital twins which leads to an even more extensive interoperability between different organizations or stakeholders.
+		Since a big part of the data enabling a digital twin usually is being captured through IoT driven sensors <a href="#ref5"> <sup>[5]</sup></a> the connectivity of these sensors is of high importance. The way different sensors and pieces of equipment are connected is essential for an efficient creation of appropriate digital twins as a relatively bad connection will have a negative effect on the transferability of data. This may also be defined as the interoperability of the digital twin system. Besides the essence of different pieces of equipment being interoperable, connectivity of the digital twin also leads to an easier connection with different users of the digital twin. It can be very beneficial if multiple people within a network/organization have access to the same digital twin from different locations. This way, connectivity may also increase the efficiency of virtual teams or may have positive network effects in case the value of the digital twin is connected to the number of its users <a href="#ref8"> <sup>[8]</sup></a>. Bosschert, Heinrich and Rosen (2018) even argue the connective nature of digital twins may lead to the connection between multiple digital twins which leads to an even more extensive interoperability between different organizations or stakeholders <a href="#ref9"> <sup>[9]</sup></a>.
 		</p>
 		</div>
 		<div class="hidblock" id="cont3">
@@ -422,26 +431,33 @@ window.addEventListener("hashchange", function () {
 
 <div class="textbreed">
 <h2>General Impact</h2>
-<p>As discussed earlier, the application of digital twins has the potential to enable decentralization-, an increasing efficiency- and the disruption of a range of processes in different industries. It is an interesting debate to see which industries in particular may be affected by the emergence of digital twins. In order to do so the industry-level dynamics must be mapped and an understandance of the enabling factors (and barriers) with respect to digital twins must be built. 
-To better understand industry adoptance of digital twin technology a recent research conducted by Gartner provides some clarity (Costello, Omale, 2019). Because of the strong connection digital twin technology has with IoT based processes, the research focused on organizations implementing IoT projects. Thirteen percent of these organizations are already using digital twins in 2019, while another 62 percent are either in the process of establishing digital twin use or are planning to do so. This shows the adoption of digital twins on an industry-level is certainly on the rise compared to previous years. [find a figure/chart showing DT adoption] 
-The developments within- and applications of digital twins are not expected to be isolated in only one industry (source). Applications of this technology throughout a whole range of different industries and processes are believed to be emerging in the future. Following, the enabling factors concerned with the emergence of digital twin technology will be covered. Besides, some examples will be given of industries for which it is expected digital twins will play a significant role in the future. However, it is important to note the application of digital twins will not necessarily be limited to the discussed industries. 
+<p>
+As discussed earlier, the application of digital twins has the potential to enable decentralization-, an increasing efficiency- and the disruption of a range of processes in different industries. It is an interesting debate to see which industries in particular may be affected by the emergence of digital twins. In order to do so the industry-level dynamics must be mapped and an understandance of the enabling factors (and barriers) with respect to digital twins must be built. 
+<br><br>
+To better understand industry adoptance of digital twin technology a recent research conducted by Gartner provides some clarity <a href="#ref10"> <sup>[10]</sup></a>. Because of the strong connection digital twin technology has with IoT based processes, the research focused on organizations implementing IoT projects. Thirteen percent of these organizations are already using digital twins in 2019, while another 62 percent are either in the process of establishing digital twin use or are planning to do so. This shows the adoption of digital twins on an industry-level is certainly on the rise compared.
+<br><br>
+The developments within- and applications of digital twins are not expected to be isolated in only one industry <a href="#ref5"> <sup>[5]</sup></a>. Applications of this technology throughout a whole range of different industries and processes are believed to be emerging in the future. Following, the enabling factors concerned with the emergence of digital twin technology will be covered. Besides, some examples will be given of industries for which it is expected digital twins will play a significant role in the future. However, it is important to note the application of digital twins will not necessarily be limited to the discussed industries. 
 </p>
 </div>
 
 <div class="textbreed">
 <h2>S-curve</h2>
 <p>
-To measure the performance level of a technology some useful frameworks are provided from academic literature. One of these frameworks is ‘the technology S-curve’ (source). The name of this tool refers to the shape of the curve, which is also presented in figure X.
+To measure the performance level of a technology some useful frameworks are provided from academic literature. One of these frameworks is ‘the technology S-curve’ <a href="#ref11"> <sup>[11]</sup></a>. The name of this tool refers to the shape of the curve, which is also presented in figure 1.
 </p>
 <div class="imgwrap">
 <img src="scurve.png">
+<p style="font-size:10px;">
+Figure 1 <a href="#ref11"> <sup>[11]</sup></a>
+</p>
 </div>
 <p>
-The S-curve represents the performance of the technology on the y-axis over time on the x-axis. Generally speaking, for every technology, there are a number of milestone moments that can be identified in a technology’s roadmap. It starts with pioneering the science behind the technology. Subsequently, there are generally some major technical obstacles which must be tackled before the technology’s application can take off, and the performance of it will be mastered. Eventually, a technology tends to approach its physical limits over time at which point a new ‘disrupting’ technology may prove to be the better alternative. 
-
-Digital twin technology specifically is around a quarter in its S-curve. The science behind has most definitely been pioneered (sources!). And the first of its major technical obstacles have been overcome (or are in the process of being overcome). Take for instance the computing power needed for the physical asset to generate data and access to servers on-premise, in the cloud or at the edge for further processing and storage. Also the connectivity to transmit these data is an essential factor for this process. These two factors would have been major obstacles to creating digital twins in the past but they are starting to become surmountable. All this points to the establishment of IoT, which has allowed DT technology to be cost-effective enough to implement. However, still not all obstacles to digital twins’ performance have been overcome. In the context of the S-curve we can conclude that anno 2019, the technology finds itself around a quarter of the curve at a very crucial point where its major obstacles can be seen to be overcome within the near future. 
-
-This following part will discuss digital twins’ enabling factors which in turn can also be an obstacle depending on their performance. 
+This concept came about at roughly the same time as Wireless Sensor Networks, which created a growth in interest from industrial and research organisations <a href="#ref12"> <sup>[12]</sup></a>.  The increasing availability of inexpensive low powered elements like processors, sensors and radios usually integrated within a single chip. These possess a wide array of applications from weather monitoring to target tracking. The ability an individual has to access these technological instruments through a computational device is called Internet of Things, although it can and usually is seen as much more. Through the cross-interaction with other technologies such as DT, AR/VR, Big Data and multiple systems from several companies, cars, home appliances, electronic devices, games consoles, basically any device with sensorial information and a stable connection to the internet is connected, IoT has the potential to revolutionise connectivity as we know it, bringing with it new insights and perspectives.
+<br><br>
+DHL argues Digital Twin adoption is heavily impacted by the growing interest in IoT 
+<a href="#ref13"> <sup>[13]</sup></a>. The more devices are connected, the more information is being shared and with that the more accurate Digital Twins can be, and collecting large volumes of data from this wide array of devices is cheaper and easier than ever before. This raises the counter-argument which states that the more data you have from IoT and Big data platforms and products, the more complex that data, which may in turn lead to a higher adoption of subsystems and digital tools to aid managers and decision-makers.
+<br><br>
+Furthermore, Digital Twin technology advanced enough can also maximise IoT deployment, efficiency, and encapsulation (aggregating a complex piece of details/software within one single line of code), as organisations will be able to test out multiple objects virtually before deciding to proceed with the physical model<a href="#ref14"> <sup>[14]</sup></a><a href="#ref15"> <sup>[15]</sup></a>.
 </p>
 </div>
 
@@ -468,7 +484,12 @@ Furthermore, DT technology advanced enough can also maximise IoT deployment, eff
 	<div class="columntext">
     <h2>Augmented Reality / Mixed Reality / Virtual Reality</h2>
 	<p>
-	To efficiently gain advantage, and act on the insights generated by a digital twin, it must be rendered either on a screen (2D) or in physical space (3D). To date, most digital twins have been rendered in two-dimensional space, as the conventional computing norms of today limit us to displays on monitors, laptops, and other screens. But increasingly, augmented reality is enabling us to display digital content in 3D. In addition, mixed reality allows us to interact with digital content in our existing physical environment. And virtual reality allows us to create entirely new environments to render digital twins in a highly immersive way, creating the richest consumption of and interaction with the information. While the above technologies – IoT, cloud computing, APIs, and artificial intelligence – provide the underlying sensing and processing infrastructure required to create a digital twin, augmented, mixed, and virtual reality are tools for visualizing digital twins and making them real to the user. 
+We’ve underlined and discussed technologies which would augment Digital Twins’ processes, its functioning performance. However, an extremely powerful technology is useless if it’s impossible to understand/work with. <a href="#ref13"> <sup>[13]</sup></a>.
+<br><br>
+Digital Twin technology is most of the times visualised through a 2D space, as conventional technology limits us to monitors, and laptop/desktop screens. Increasingly however, Augmented Reality paves new paths in ways of displaying immersive digital content, 3D included. AR refers to the overlay of digital information/content over the real world, usually on 2D screen such as a phone, however it can also be on a Head-Mounted display (HMD). There can be bits of interaction between real and virtual worlds, however these are minimum, such as eye/face tracking, or ground-mapping so digital objects are aware of where to stand; Another, more powerful and complex interface is Mixed Reality, which allows its users to interact with digital content connected to our physical environment. The most notable differences between MR and AR is the computing processes, namely MR processes require much more computing power due to its complexity, from spatial computing (DoF tracking, image and plane tracking, etc.) and an active ability to interact with the digital world using nothing but your hands. Examples include Microsoft HoloLens <a href="#ref16"> <sup>[16]</sup></a>, a HMD untethered device with apps, solutions and softwares that enable teams to collaborate in 1 single environment, regardless of where each person is; and Nreal Technology <a href="#ref17"> <sup>[17]</sup></a>, a company attempting to create an affordable, user-friendly MR device, which can be connected to one’s phone or computer for an improved experience. Should an engineer be wearing a MR device with a Digital Twin of the airplane engine he is actively fixing, this would allow him to easily and cleanly swap through digital and physical information, whereas in a traditional computer it would likely require another staff member to touch the device, or he would have to constantly unequip his gloves, losing time/resources.
+<br><br>
+Lastly in the 3R spectrum is Virtual Reality, which refer to the creation of entirely simulated digital environments in which users are completely immersed into and able to interact with this world. HTC Vive Pro Eye <a href="#ref18"> <sup>[18]</sup></a>, Samsung Gear VR <a href="#ref19"> <sup>[19]</sup></a>, and a few others are good examples of where we stand right now with VR. Military, Medical, Engineering and Agricultural training sectors stand to gain the most with the application of VR in Digital Twin technology. With a precise virtual replica of the physical environment, companies are able to simulate exact simulations to train and improve users and workers without the loss of resources needed to create physical training spaces.
+
 	</p>
     </div>
 	<div class="column">
@@ -488,15 +509,15 @@ Furthermore, DT technology advanced enough can also maximise IoT deployment, eff
 <div class="textbreed">
 <h2> Digital Twins application in medicine</h2>
 <p>
-In the field of drug development, there is a hypothesis that the digital twin technology will contribute in the context of personal medicine. With the advent of techniques to measure personal parameters such as metabolism, DNA sequence and lifestyle, a high-quality personal model can be created in the form of a digital twin. This digital twin (or virtual patient) enables to investigate ‘in-silico’ what type of medication is most suitable for a patient (Ekins, Mestres, Testa, 2007). With the integration of big data, it might be possible to predict how a patient will respond to a certain treatment. This can be done by analysing a database in which treated patients are listed and how they have responded to their treatments. (Bruynseels, Sio, & Hoven, 2018) By this manner, valuable time and expensive treatments kan be saved from the real patient. Moreover, this technology can improve the experience of the patient himself, because the patient does not have to endure the search for the right treatment.
-	<br><br>
+In the field of drug development, there is a hypothesis that the digital twin technology will contribute in the context of personal medicine. With the advent of techniques to measure personal parameters such as metabolism, DNA sequence and lifestyle, a high-quality personal model can be created in the form of a digital twin. This digital twin (or virtual patient) enables to investigate ‘in-silico’ what type of medication is most suitable for a patient <a href="#ref20"> <sup>[20]</sup></a>. With the integration of big data, it might be possible to predict how a patient will respond to a certain treatment. This can be done by analysing a database in which treated patients are listed and how they have responded to their treatments <a href="#ref21"> <sup>[21]</sup></a>. By this manner, valuable time and expensive treatments kan be saved from the real patient. Moreover, this technology can improve the experience of the patient himself, because the patient does not have to endure the search for the right treatment <a href="#ref22"> <sup>[22]</sup></a>.
+<br><br>
 Another application of digital twin technology in healthcare is to create a copy of each individual. This twin can then be fed by data from sensors. Or as Philips states:
-	<br><br>
-<i>“The ultimate vision is to have a lifelong, personalized model of a patient that is updated with each measurement, scan or exam, and that includes behavioral and genetic data as well.” - (van Houten, 2018)</i>
-	<br><br>
-Subsequently, real-time and remote analysis can be done in order to find out which health related problems may occur. Consider, for example, someone who has a bad heart because of his/her bad genes, and at the same time measurements show that the patient involved has high blood pressure, then the model might be able to generate an estimation of the expected lifetime of the heart valves. The heart valves can then be replaced preventively. These preventive treatments prevent patients from life-threatening situations and major inconveniences. A problem at this moment, however, is that people are highly unique and that very accurate techniques are needed to determine, for example, how someone’s heart is constructed. (van Houten, 2018)
-	<br><br>
-If you look further into the future, the digital twin technology can also be seen as a platform; for example, it allows the physician to accurately study the patient's heart through VR prior to surgery (van Houten, 2018). However, this kind of application requires proper integration of the required technologies. Besides, this form of application of digital twin technology also raises major ethical issues (Bruynseels, Sio, & Hoven, 2018). In addition, the technical integration of all different data types and data points can be a challenge. (Krikpatrick, 2019)
+<br><br><i>
+“The ultimate vision is to have a lifelong, personalized model of a patient that is updated with each measurement, scan or exam, and that includes behavioral and genetic data as well.” - (van Houten, 2018) <a href="#ref23"> <sup>[23]</sup></a>
+</i><br><br>
+Subsequently, real-time and remote analysis can be done in order to find out which health related problems may occur. Consider, for example, someone who has a bad heart because of his/her bad genes, and at the same time measurements show that the patient involved has high blood pressure, then the model might be able to generate an estimation of the expected lifetime of the heart valves. The heart valves can then be replaced preventively. These preventive treatments prevent patients from life-threatening situations and major inconveniences. A problem at this moment, however, is that people are highly unique and that very accurate techniques are needed to determine, for example, how someone’s heart is constructed <a href="#ref23"> <sup>[23]</sup></a>.
+<br><br>
+If you look further into the future, the digital twin technology can also be seen as a platform; for example, it allows the physician to accurately study the patient's heart through VR prior to surgery<a href="#ref23"> <sup>[23]</sup></a>. However, this kind of application requires proper integration of the required technologies. Besides, this form of application of digital twin technology also raises major ethical issues <a href="#ref21"> <sup>[21]</sup></a>. In addition, the technical integration of all different data types and data points can be a challenge <a href="#ref24"> <sup>[24]</sup></a>.
 
 </p>
 </div>
@@ -508,19 +529,50 @@ If you look further into the future, the digital twin technology can also be see
 <div class="textbreed">
 <h2> Digital Twins application in farming</h2>
 <p>
-With the increase in world population, there’s an increasing shortage of food (source). Agriculture has to become more effective, and one of the technologies named to help farming become more effective is digital twins (Verdouw et al, 2017). A digital twin will help farmers deal with unexpected events. By using a virtual version of their farm they can predict potential issues, predict necessary maintenance and use the right composite for optimal crop growth (Verdouw et al, 2017)
+With the increase in world population, there’s an increasing shortage of food <a href="#ref25"> <sup>[25]</sup></a>. Agriculture has to become more effective, and one of the technologies named to help farming become more effective is digital twins <a href="#ref26"> <sup>[26]</sup></a>. A digital twin will help farmers deal with unexpected events. By using a virtual version of their farm they can predict potential issues, predict necessary maintenance and use the right composite for optimal crop growth. <a href="#ref26"> <sup>[26]</sup></a> 
 <br><br>
-Furthermore, with the use of sensors, antennas, and scanning machinery, Stara (see example below - link to incumbents please Niels) is able to create a digital map of the designated area, and a virtual twin with all its soil mineral and fertility information, as well as height differences and wide array of data. This allows for precision agriculture to take place, where predictive and prescriptive decision-making can be automated, allowing for optimisation of crop retrieval and soil reparation efficiency.A
+Furthermore, with the use of sensors, antennas, and scanning machinery, Stara (see example below - link to incumbents please Niels) is able to create a digital map of the designated area, and a virtual twin with all its soil mineral and fertility information, as well as height differences and wide array of data. This allows for precision agriculture <a href="#ref27"> <sup>[27]</sup></a> . to take place, where predictive and prescriptive decision-making can be automated, allowing for optimisation of crop retrieval and soil reparation efficiency.A
 <br><br>
 In this day and age,being successful in your niche, whatever it may be, is extremely difficult due to competition, but even more so if entrepreneurs choose to ignore the potential of technology. Digital twin also has the ability to empower its users in the agricultural industry (more specifically farmers), as it can arm them with analytical tools and systems to accurately and efficiently plant crops, prepare for potential floods/droughts and other simulations, accurately predict and prescribe specific locations for specific seeds, needing different ground conditions or sunlight exposure (these are only a few examples). These techy farmers may gain a vast advantage over its traditional counterparts.
 <br><br>
-In Beekeeping for example, Digital Twin technology allows systems to produce a real-time virtual representation of the apiary system, which through multiple sensors (weight, humidity, light, sound…) allows beekeepers to identify possible diseases/pest infections, real-time knowledge of colony status, among many others. This, in turn, enhances productivity and efficiency of ecosystems monitoring and maintenance. https://www.beezon.gr/en/about-us/ 
-
+In Beekeeping for example, Digital Twin technology allows systems to produce a real-time virtual representation of the apiary system, which through multiple sensors (weight, humidity, light, sound…) allows beekeepers to identify possible diseases/pest infections, real-time knowledge of colony status, among many others. This, in turn, enhances productivity and efficiency of ecosystems monitoring and maintenance. <a href="#ref28"> <sup>[28]</sup></a>. 
 </p>
 </div>
 
 <div class="titleheader glow">
 <h2>Disruptive- vs sustaining effects of digital twin technology</h2>
+</div>
+
+<div class="textbreed">
+<h2> Disruptive and sustaining innovations</h2>
+<div class="imgwrap">
+<img src="dissup.png">
+<p style="font-size:10px;">
+Figure 2  <a href="#ref31"> <sup>[31]</sup></a>
+</p>
+</div>
+<p>
+As is described by Christensen and Raynor <a href="#ref29"> <sup>[29]</sup></a>, <a href="#ref30"> <sup>[30]</sup></a>. Innovations can be categorized as being ‘sustaining’ or ‘disruptive’. A sustaining innovation concerns improving an existing technology or product to enhance its performance, aim for higher prices and attract more customers in existing markets. A disruptive innovation, though, concerns a relative new technology or products with a novel mix of features. Disruptive innovations tend to include simpler or more convenient products for lower prices than the traditional products and appeal to new customers. Novel technologies or significant performance enhancements in existing technologies are classical enablers of disruptive innovation. However, novel technologies might as well be used in a sustaining manner depending on the context.
+</p>
+<p>
+In the case of digital twin technology the question remains whether the technology should be considered as a disruptive- or a sustaining innovation. Taking the industry examples mentioned earlier, the healthcare and the agriculture sector, as context some important remarks on this matter can be made.
+</p>
+</div>
+
+<div class="textbreed">
+<h2> Healthcare</h2>
+<p>
+In the field of healthcare, where digital twins can revolutionize the way patients are analyzed, diagnosed and physical defects may even be predicted, the technology can very well be defined as disruptive. As digital twin applications may replace the traditional (physical) processes of diagnosing patients and might provide a solution for predicting treatment efficiency it can have a disrupting effect on the entire healthcare industry. However, even though there are a lot of industry processes which may be disrupted by digital twins, for other processes and applications digital twin technology may still very well have a sustaining effect. Take for instance the way Philips can use digital twins in their initial stage to monitor the status of their products or machinery. This way, digital twin technology can have a sustaining effect on the performance on their traditional products and enhances the already dominant design. Concluding, digital twin technology has the potential to very much affect the healthcare industry as multiple processes and applications within the industry may be disrupted. At the same time traditional equipment suppliers in healthcare may experience sustaining effects of the technology as it may enhance their already dominant designs. 
+
+</p>
+</div>
+
+<div class="textbreed">
+<h2> Agriculture</h2>
+<p>
+In the agriculture industry, the digital twin technology has the potential to have disrupting- as well as sustaining effects. Digital twins may enable the development of precision agriculture in the future and by doing this enable an increasing efficiency of regular agriculture processes. In this context digital twin technology can be defined as a sustaining innovation as it enhances agricultural companies’ existing products and lowers its costs. At the same time digital twins may replace existing systems and equipment used to monitor today’s farms or agriculture companies. In the context of the manufacturers of these monitoring products digital twin technology may prove to be a very disruptive innovation. In conclusion, there is no doubt digital twin technology will have significant effects within the agricultural sector. However, whether these effects will be disrupting or sustaining will depend on the context in which it will be applied. 
+
+</p>
 </div>
 
 <div class="titleheader glow">
@@ -530,6 +582,9 @@ In Beekeeping for example, Digital Twin technology allows systems to produce a r
 <div class="textbreed">
 <h2> Overall market impact of digital twin technology</h2>
 <p>
+As explained above, digital twin technology has the potential (in case it’s not already doing so) to significantly affect different industries whether this is in a sustaining- or disrupting way. In order to cope with the push of a new disrupting technology firms have to respond and form a strategy. For incumbents, firms representing a traditional market share related to the dominant design, these responses may range from defensive to offensive <a href="#ref31"> <sup>[31]</sup></a>. A defensive approach would, for instance, be to ‘battle’ the disruptive innovation through legal battles or ‘flee’ to niche market segments where a firm could maintain their market share. A more offensive approach would be to frame the new technology as an opportunity and ‘transition’ to benefit from these opportunities. This could be done through an ambidextrous approach working on innovative solutions on the one hand while working with your traditional products as well. 
+<br><br>
+In different industries and different contexts, firms will have different responses to disruptive technologies. This goes for incumbents as well as for new entrants, emerging new companies trying to seize the opportunities brought by a disruptive innovation. Beneath, different examples for both incumbents and new entrants are given within the same industry examples as described before. 
 
 </p>
 </div>
@@ -538,12 +593,167 @@ In Beekeeping for example, Digital Twin technology allows systems to produce a r
 <h2>Incumbent firms responses</h2>
 </div>
 
+<div class="textbreed">
+<h2> Incumbents in medicine</h2>
+<p>
+An example of an incumbent implementing a transition response is Janssen Pharmaceuticals, a company under Johnson & Johnson. The company has designed a training programme to train their nurses doing cancer (myeloma) treatments. On their VR platform, nurses are able to perform their first cancer treatment in order to familiarize the nurse with the way of working before treating real patients. These patients often have only a couple of months to live. On this VR platform, nurses have access to all the tools available in a regular treatment office, including the patient <a href="#ref32"> <sup>[32]</sup></a>. Janssen Pharmaceuticals’ approach to adopting the digital twin technology falls within the transition category within the response to disruption theory <a href="#ref33"> <sup>[33]</sup></a> . The organization regards digital twin technology as an opportunity and integrates it into business operations in the specific context of cancer treatments.
+<br><br>
+Another example of an incumbent firm that implements digital twin technology is Philips. Philips is known to many for its medical equipment and a recent development is the application of digital twin technology. Philips currently has a lot of equipment such as MRI scanners, from which they can read the technical data remotely. This data is read into a digital twin of the scanner and based on this data diagnostics about the machine itself is determined. Next, AI is used to predict which parts require maintenance and by this manner down-time and possibly expensive repairs can be prevented. How Philips handles this datastream is shown in figure x <a href="#ref34"> <sup>[34]</sup></a>. In addition, Philips described a philosophy on how digital twin technology can be applied as a digital representation of every human being. This philosophy is described under "digital twins application in medicine" above. Philips also falls within the transition category within the response to disruption theory, because Philips also regards digital twin technology as an opportunity <a href="#ref33"> <sup>[33]</sup></a>. While Philips just integrated the digital twin technology into the diagnostics of certain machines, the organization also sees opportunities in digital twins as a representative of individuals.
+
+</p>
+<img src="philips.png">
+<p style="font-size:10px;">
+Figure 3: A representation of how Philips uses data from its physical equipment for diagnostic purposes. The diagnostics is used for preventive maintenance and development of new and improved medical devices <a href="#ref34"> <sup>[34]</sup></a>.
+</p>
+</div>
+
+<div class="textbreed">
+<h2> Incumbents in agriculture</h2>
+<p>
+“Agricultural products are derived from cultivated plants or animals to sustain or enhance human life. Food is the most widely produced agricultural product, and, the global per-person food supply as measured in calories per person has risen more than 20 percent in the past 50 years.” - <a href="#ref35"> <sup>[35]</sup></a>. 
+<br><br>
+This statement emphasises the weight and pressure behind the world’s largest agricultural companies to really push the boundaries of efficiency and innovation. An example of how these boundaries are being pushed through technology is through the implementation of the digital twin technology, more specifically Stara  <a href="#ref36"> <sup>[36]</sup></a>., an agricultural machinery company who equips its tractors with IoT sensors; this enables real-time asset visibility, increasing efficiency. The company and clients with access are able to proactively hinder malfunctions, and predict when tractors are close to requiring maintenance. Stara has also implemented new services that provide farmers with real-time insight with the optimal conditions for planting crops and improving farm yields. This is done with an array of machinery and devices that scan the ground and its soil, plants several types of seeds, sprays automatically, etc., send all this information through several antennas and provides an innovative software to farmers. 
+<br><br>
+As a firm established initially in the 1960’s, Stara stayed ahead of the competition by tapping into data in early 2000, when it created a project denominated Aquarius, which utilises precision agriculture (PA) <a href="#ref27"> <sup>[27]</sup></a> , IT sensors leveraged to provide inputs according to soil, climate and climate variability, which could only be accomplished with enormous amounts of data. They initially tested this 15 different municipalities, to verify the feasibility of PA;  georeferenced soil sampling, crop maps generation and application of inputs at varying rates were done initially but with time and knowledge, the research is focusing on fewer properties, but with more intensified efforts.
+
+</p>
+</div>
+
+
 <div class="titleheader glow">
 <h2>New entrants conceptualisation</h2>
 </div>
 
+<div class="textbreed">
+<h2> New entrants in medicine</h2>
+<p>
+An example of a new entrant is Sim and Cure. Sim and Cure is an organization specialized in creating ‘digital twins’ of the hearts of individual patients. The brand name under which Sim and Cure sells this technology is Sim & Size®. The Sim & Size® models are created for patients who require specific heart surgery. Each model is made prior to surgery, to enable the doctor to do a comprehensive analysis. For example, the doctor looks at what shape a stent should have, what size the stent should be, on what specific location the stent should be placed and how the stent should be oriented <a href="#ref37"> <sup>[37]</sup></a>. In addition to models designed for stents, Sim and Cure also has models for placing intrasaccular devices and flow diverters <a href="#ref38"> <sup>[38]</sup></a>.
+
+</p>
+</div>
+
+<div class="textbreed">
+<h2> New entrants in agriculture</h2>
+<p>
+Digital twins is a relatively new concept when it comes to farming, with studies still researching its feasibility <a href="#ref39"> <sup>[39]</sup></a>. However in recent studies the market has been identified as one where digital twins could be of great value <a href="#ref40"> <sup>[40]</sup></a>. Where incumbent firms their applications of digital twins often focus on modernizing their traditional equipment <a href="#ref41"> <sup>[41]</sup></a>. , new entrants shine on making digital twins of livestock or crops. One example of such a new entrant is OliFLY which helps track and control olive flies, a common pest on olive farms. 
+<br><br>
+Another example of a new entrant in farming is the dutch digital twin software “The Intelligent Dairy Farmer's Assistant” from the company Connectera (https://ida.io/) <a href="#ref42"> <sup>[42]</sup></a>. They have created a digital twin that can be used for dairy cows. The software from Connectera can remotely monitor a cow’s health and when it is ready to breed. Where it used to be impossible for farmers to keep up with increasingly larger herds of cows, digital twins allow farmers to monitor every cow in their herd effectively. 
+<br><br>
+Digital twins in farming often focus on specific aspects of farming. Combined with that, in the past, farmers have shown late adoption of technology, might be the reason why new entrants haven’t in this market haven’t really been able to take off. Connectera, one of the larger new entrants, has been estimated to have an annual revenue of just $1,8 million (Owler, 2019)<a href="#ref43"> <sup>[43]</sup></a>.
+
+</p>
+</div>
+
 <div class="titleheader glow">
 <h1>References</h1>
+</div>
+
+<div class="textbreed">
+
+<p id="ref1" class="reference">
+[1] The ill-fated space odyssey of Apollo 13 (2004). Retrieved from: <a href="https://er.jsc.nasa.gov/seh/pg13.htm">https://er.jsc.nasa.gov/seh/pg13.htm</a>
+</p>
+
+<p id="ref2" class="reference">
+[2] Glaessgen, E., &amp; Stargel, D. (2012, April). The digital twin paradigm for future NASA and US Air Force vehicles. In <em>53rd AIAA/ASME/ASCE/AHS/ASC Structures, Structural Dynamics and Materials Conference 20th AIAA/ASME/AHS Adaptive Structures Conference 14th AIAA</em> (p. 1818).
+</p>
+
+<p id="ref3" class="reference">
+[3] Tao, F., Cheng, J., Qi, Q., Zhang, M., Zhang, H., &amp; Sui, F. (2018). Digital twin-driven product design, manufacturing and service with big data. <em>The International Journal of Advanced Manufacturing Technology</em>, <em>94</em>(9-12), 3563-3576.
+</p>
+
+<p id="ref4" class="reference">
+[4] Ke, S., Xiang F., Zhang, Z. &amp; Zuo, Y. (2019) A enhanced interaction framework based on VR, AR and MR in digital twin. <em>Procedia CIRP</em>, <em>83</em>, 753-758.
+</p>
+
+<p id="ref5" class="reference">
+[5] Schleich, B., Anwer, N., Mathieu, L., &amp; Wartzack, S. (2017). Shaping the digital twin for design and production engineering. <em>CIRP Annals</em>, <em>66</em>(1), 141-144.
+</p>
+
+<p id="ref6" class="reference">
+[6] Lasi, H., Fettke, P., Kemper, H. G., Feld, T., &amp; Hoffmann, M. (2014). Industry 4.0. <em>Business &amp; information systems engineering</em>, <em>6</em>(4), 239-242.
+</p>
+
+<p id="ref7" class="reference">
+[7] Uhlemann, T. H. J., Lehmann, C., &amp; Steinhilper, R. (2017). The digital twin: Realizing the cyber-physical production system for industry 4.0. <em>Procedia Cirp</em>, <em>61</em>, 335-340.
+</p>
+
+<p id="ref8" class="reference">
+[8] Berends, H. (2019). Lecture 1: The nature of digital technologies. <em>Canvas slides</em>
+</p>
+
+<p id="ref9" class="reference">
+[9] Boschert, S., Heinrich, C., &amp; Rosen, R. (2018). Next generation digital Twin. <em>Proceedings of TMCE, Las Palmas de Gran Canaria, Spain Edited by: Horvath I., Suarez Rivero JP and Hernandez Castellano PM</em>.
+</p>
+
+<p id="ref10" class="reference">
+[10] Costello, K., Omale, G. (2019). Survey Analysis: Digital Twins Are Poised for Proliferation. <em>Gartner.</em> Retrieved October 2, 2019, from: <a href="https://www.gartner.com/en/newsroom/press-releases/2019-02-20-gartner-survey-reveals-digital-twins-are-entering-mai">https://www.gartner.com/en/newsroom/press-releases/2019-02-20-gartner-survey-reveals-digital-twins-are-entering-mai</a>
+</p>
+
+<p id="ref11" class="reference">
+[11] Tuertscher, P. (2019). Lecture 4: Industry level dynamics. <em>Canvas slides</em>
+</p>
+
+<p id="ref12">
+[12] Dawood, M. S., Margaret, M. J., &amp; Devika, R. (2018). Review on Applications of Internet of Things (IoT). <em>International Journal of Advanced Research in Computer Engineering &amp; Technology (IJARCET)</em>, <em>7</em>(12). <a href="https://www.researchgate.net/publication/329672903_Review_on_Applications_of_Internet_of_Things_IoT">https://www.researchgate.net/publication/329672903_Review_on_Applications_of_Internet_of_Things_IoT</a>
+</p>
+
+<p id="ref13">
+[13] Heutger, M. &amp; Kuecklhaus, M. (2019) Digital Twins in Logistics: A DHL perspective on the impact of digital twins on the logistics industry. <em>Powered by DHL Trend Research. </em>Retrieved September 25, 2019 from <a href="https://www.logistics.dhl/content/dam/dhl/global/core/documents/pdf/glo-core-digital-twins-in-logistics.pdf">https://www.logistics.dhl/content/dam/dhl/global/core/documents/pdf/glo-core-digital-twins-in-logistics.pdf</a>
+</p>
+
+<p id="ref14">
+[14] Shaw, K. and Fruhlinger, J. (2019) What is Digital Twin and why it&rsquo;s important to IoT. <em>NetworkWorld. </em>Retrieved October 4, 2019 from <a href="https://www.networkworld.com/article/3280225/what-is-digital-twin-technology-and-why-it-matters.html">https://www.networkworld.com/article/3280225/what-is-digital-twin-technology-and-why-it-matters.html</a>
+</p>
+
+<p id="ref15">
+[15] Hippold, S. (2019) How Digital Twins Simplify the IoT. <em>Gartner, Inc.</em> Retrieved October 4, from <a href="https://www.gartner.com/smarterwithgartner/how-digital-twins-simplify-the-iot/">https://www.gartner.com/smarterwithgartner/how-digital-twins-simplify-the-iot/</a>
+</p>
+
+<p id="ref16">
+[16] Microsoft Hololens (2019) Microsoft Hololens &brvbar; Mixed Reality Technology for Business. <em>Microsoft 2019. </em>Retrieved October 5, 2019 from <a href="https://www.microsoft.com/en-us/hololens">https://www.microsoft.com/en-us/hololens</a>
+</p>
+
+<p id="ref17">
+[17] Nreal (2019) Nreal - Building Mixed Reality for Everyone. <em>Hangzhou Tairuo Technology Co., Ltd. </em>Retrieved October 6, 2019, from <a href="https://www.nreal.ai/">https://www.nreal.ai/</a>
+</p>
+
+<p id="ref18">
+[18] Vive (2019) VIVE Pro Eye &brvbar; VIVE. <em>HTC Corporation. </em>Retrieved October 2, 2019 from <a href="https://www.vive.com/eu/product/vive-pro-eye/">https://www.vive.com/eu/product/vive-pro-eye/</a>
+</p>
+
+<p id="ref19">
+[19] Gear VR (2019) Samsung Gear VR with controller - The official Samsung Galaxy Website. <em>Samsung Electronics. </em>Retrieved October 2, 2019 from <a href="https://www.samsung.com/global/galaxy/gear-vr/">https://www.samsung.com/global/galaxy/gear-vr/</a>
+</p>
+
+<p id="ref20">
+[20] Ekins, S. , Mestres, J. and Testa, B. (2007), <em>In silico</em> pharmacology for drug discovery: methods for virtual ligand screening and profiling. British Journal of Pharmacology, 152: 9-20.
+</p>
+
+<p id="ref21">
+[21] Bruynseels, K., Sio, F. S. de, &amp; Hoven, J. van den. (2018). Digital Twins in Health Care: Ethical Implications of an Emperging Engineering Paradigm. <em>Frontiers in Genetics</em>, <em>9</em>(31).
+</p>
+
+<p id="ref22">
+</p>
+
+<p id="ref23">
+</p>
+
+<p id="ref24">
+</p>
+
+<p id="ref25">
+</p>
+
+<p id="ref26">
+</p>
+
+<p id="ref27">
+</p>
+
+
+
 </div>
 
 
